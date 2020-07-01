@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<!--
+Website name : Skyler
+Copyright : COPYRIGHT © 2019. ALL RIGHTS RESERVED. WEBSITE BY SKYLER DEV TEAM
+Author  : dimitry
+-->
+
+<html>
+<head>
+    <title>Skyler - Kezdőlap</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Skyler bot egy magyar discord bot, ami eléggé hasznos a magyarok számára.">
+    <meta name="theme-color" content="#10bbeb" />
+    <meta property="og:description" content="A Skyler bot egy magyar discord bot, ami eléggé hasznos a magyarok számára.">
+    <meta property="og:title" content="Skyler Discord Bot">
+    <meta property="og:site_name" content="Skyler">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="hu_hu">
+    <meta property="og:url" content="https://skylerbot.tk">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/594458554610614292/640094238612389894/skyler.png">
+    <link rel="schema.DC" href="https://purl.org/dc/elements/1.1/">
+    <link rel="schema.DCTERMS" href="https://purl.org/dc/terms/">
+    <meta name="DC.title" content="Skyler - Kezdőlap">
+    <meta name="DC.creator" content="dimitry">
+    <meta name="DC.date" content="2020">
+    <meta name="DC.type" content="website">
+    <meta name="DC.language" content="hu">
+    <meta name="keywords" content="skyler, skylerhu, skylermeghívó link, skylerdiscordbot, discord, bot, robot, skyler, skyler discord szerver, discord server">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/skyler.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link href="css/style.css" rel="stylesheet">
+<style>
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: grey; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #2082b3; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+</style>
+</head>
+
+<audio loop autoplay>
+  <source src="assets/skylermusic.mp3" type="audio/mpeg">
+</audio>
+
+<header class="bg2"
+</header>
+
+<table id="customers">
+  <tr>
+    <th>Moderációs Parancsok</th>
+    <th>Szükséges jog</th>
+    <th>Leírás</th>
+  </tr>
+  <tr>
+    <td>p/kick</td>
+    <td>tagok kirúgása (kick_members)</td>
+    <td>megemlített tag kirúgása a szerverről</td>
+  </tr>
+  <tr>
+    <td>p/ban</td>
+    <td>tagok kitiltása (ban_members)</td>
+    <td>megemlített tag kitiltása a szerverről</td>
+  </tr>
+  <tr>
+    <td>p/giverole</td>
+    <td>rangok kezelése (manage_roles)</td>
+    <td>rang adása egy megemlített tagra</td>
+  </tr>
+  <tr>
+    <td>p/removerole</td>
+    <td>rangok kezelése (manage_roles)</td>
+    <td>rang elvétele egy megemlített tagtól</td>
+  </tr>
+  <tr>
+    <td>p/clear</td>
+    <td>üzenetek kezelése (manage_messages)</td>
+    <td>egy adott mennyiségű üzenet törlése</td>
+  </tr>
+  <tr>
+    <td>p/szavazás</td>
+    <td>üzenetek kezelése (manage_messages)</td>
+    <td>szavazás létrehozása</td>
+  </tr>
+  <tr>
+    <td>p/setlogs</td>
+    <td>adminisztrátor</td>
+    <td>log csatorna beállítása</td>
+  </tr>
+   <tr>
+    <td>p/userinfo</td>
+    <td>Adminisztrátori jog</td>
+    <td>egy adott felhasználó információi</td>
+  </tr>
+  <tr>
+    <td>p/serverinfo</td>
+    <td>Adminisztrátori jog</td>
+    <td>a szerver információi</td>
+  </tr>
+  <tr>
+    <td>p/report</td>
+    <td>Nincs</td>
+    <td>Tag jelentése a(z) szerver tulajdonosnak</td>
+  </tr>  
+  <tr>
+    <td>p/setcooldown</td>
+    <td>Üzenetek kezelése</td>
+    <td>Lassított mód beállítása</td>
+  </tr>  
+  <tr>
+    <td>p/setsuggestchannel</td>
+    <td>Adminisztrátori Jog</td>
+    <td>Javaslati csatorna beállítása</td>
+  </tr>  
+  <tr>
+    <td>p/addemoji</td>
+    <td>Emojik kezelése</td>
+    <td>Reakció hozzáadása</td>
+  </tr>  
+  <tr>
+    <td>p/setsuggestion</td>
+    <td>Adminisztrátori Jog</td>
+    <td>Javaslat be/ki kapcsolása</td>
+  </tr> 
+  <tr>
+    <td>p/chanelID</td>
+    <td>Nincs</td>
+    <td>Jelenlegi csatorna id-je</td>
+  </tr> 
+  <tr>
+    <td>p/staffsay</td>
+    <td>Nincs</td>
+    <td>Staff névben írhatsz a bottal</td>
+  </tr> 
+  <tr>
+    <td>p/removemoney</td>
+    <td>Adminisztrátori Jog</td>
+    <td>Economy pénz elvétel</td>
+  </tr> 
+  <tr>
+    <td>p/givemoney</td>
+    <td>Adminisztrátori Jog</td>
+    <td>Economy pénz adás</td>
+  </tr>
+  <tr>
+    <td>p/automod be</td>
+    <td>Adminisztrátori Jog</td>
+    <td>Auto-Moderation bekapcsolása</td>
+  </tr>   
+  <tr>
+    <td>p/automod ki</td>
+    <td>Adminisztrátori Jog</td>
+    <td>Auto-Moderation kikapcsolása</td>
+  </tr>   
+  <tr>
+    <td>p/announce</td>
+    <td>Adminisztrátori Jog</td>
+    <td>Felhívás készítése</td>
+  </tr>   
+  <tr>
+    <th>Üdvözlő & Búcsúzó Rendszer</th>
+    <th>Szükséges jog</th>
+    <th>Leírás</th>
+  </tr>
+  <tr>
+    <td>p/setwelcome</td>
+    <td>adminisztrátor</td>
+    <td>egyedi üdvözlő üzenet beállítása</td>
+  </tr>
+  <tr>
+    <td>p/setleave</td>
+    <td>adminisztrátor</td>
+    <td>egyedi búcsúzó üzenet beállítás</td>
+   </tr>
+   <tr>
+    <td>p/setwchannel</td>
+    <td>adminisztrátor</td>
+    <td>üdvözlő csatorna beállítása</td>
+   </tr>
+   <tr>
+    <td>p/setlchannel</td>
+    <td>adminisztrátor</td>
+    <td>búcsúzó csatorna beállítása</td>
+   </tr>
+   <tr>
+    <td>p/welcome be</td>
+    <td>adminisztrátor</td>
+    <td>üdvözlő üzenet engedélyezése</td>
+   </tr>
+   <tr>
+    <td>p/leave be</td>
+    <td>adminisztrátor</td>
+    <td>búcsúzó üzenet engedélyezése</td>
+   </tr>
+   <tr>
+    <td>p/welcome ki</td>
+    <td>adminisztrátor</td>
+    <td>üdvözlő üzenet letiltása</td>
+   </tr>
+   <tr>
+    <td>p/leave ki</td>
+    <td>adminisztrátor</td>
+    <td>búcsúzó üzenet letiltása</td>
+   </tr>
+   <tr>
+    <td>p/wlconfig (hamarosan)</td>
+    <td>adminisztrátor</td>
+    <td>összes konfiguráció a(z) Üdvözlő & Búcsúzó rendszerről</td>
+   </tr>
+  <tr>
+    <th>Ellenőrző Rendszer (Verification System)</th>
+    <th>Szükséges jog</th>
+    <th>Leírás</th>
+  </tr>
+  <tr>
+    <td>p/verify on</td>
+    <td>adminisztrátor</td>
+    <td>ellenőrző rendszer bekapcsolása</td>
+  </tr>
+  <tr>
+    <td>p/verify off</td>
+    <td>adminisztrátor</td>
+    <td>ellenőrző rendszer kikapcsolása</td>
+  </tr>
+  <tr>
+    <td>p/gencode</td>
+    <td>Nincs</td>
+    <td>Hitelesítéshez való kód generálása</td>
+  </tr>
+   <tr>
+    <td>p/setverify</td>
+    <td>adminisztrátor</td>
+    <td>sikeres megerősítés után való odaadandó rang beállítása</td>
+  </tr>
+  <tr>
+    <td>p/verify</td>
+    <td>Nincs</td>
+    <td>Megerősítés kóddal.</td>
+  </tr>
+  <tr>
+    <th>Szórakozási Parancsok (FUN System)</th>
+    <th>Szükséges jog</th>
+    <th>Leírás</th>
+  <tr>
+ <tr>
+    <td>p/games</td>
+    <td>Nincs</td>
+    <td>Játékok megnézése</td>
+  </tr>
+ <tr>
+    <td>p/kpo</td>
+    <td>Nincs</td>
+    <td>JKő, Papír, Olló játék</td>
+  </tr>
+ <tr>
+    <td>p/8ball</td>
+    <td>Nincs</td>
+    <td>Kérdezz/Felelek</td>
+  </tr>
+ <tr>
+    <td>p/dice</td>
+    <td>Nincs</td>
+    <td>Véletlenszerű szám 1-50 között</td>
+  </tr>
+ <tr>
+    <td>p/howgay</td>
+    <td>Nincs</td>
+    <td>A megjelölt tag hány % meleg</td>
+  </tr>
+ <tr>
+    <td>p/textart</td>
+    <td>Nincs</td>
+    <td>Kép készítése a megadott szöveggel</td>
+  </tr>
+ <tr>
+    <td>p/roast</td>
+    <td>Nincs</td>
+    <td>Véletlenszerű mondatok</td>
+  </tr>
+ <tr>
+    <td>p/soccer</td>
+    <td>Nincs</td>
+    <td>Focsi meccs játszása</td>
+  </tr>
+  <tr>
+    <th>Economy Rendszer (Economy System)</th>
+    <th>Szükséges jog</th>
+    <th>Leírás</th>
+  <tr>
+    <td>p/additem (hamarosan)</td>
+    <td>Adminisztrátor</td>
+    <td>Tárgy hozzáadása a bolthoz</td>
+  </tr>
+  <tr>
+    <td>p/buy (item)</td>
+    <td>Nincs</td>
+    <td>Tárgy megvásárlása a boltból</td>
+  </tr>
+  <tr>
+    <td>p/shop</td>
+    <td>Nincs</td>
+    <td>Tárgyak kilistázása</td>
+  </tr>
+  <tr>
+    <td>p/work</td>
+    <td>Nincs</td>
+    <td>Dolgozás</td>
+  </tr>
+  <tr>
+    <td>p/crime</td>
+    <td>Nincs</td>
+    <td>Rablás</td>
+  </tr>
+  <tr>
+    <td>p/level</td>
+    <td>Nincs</td>
+    <td>Economy Szint megnézése</td>
+  </tr>
+  <tr>
+    <td>p/pay</td>
+    <td>Nincs</td>
+    <td>Pénz utalása a megemlített tagnak</td>
+  </tr>	
+  <tr>
+    <td>p/bal</td>
+    <td>nincs</td>
+    <td>A megemlített tag egyenlegének megnézése</td>
+  </tr>	
+  <tr>
+    <td>p/dailyreward</td>
+    <td>nincs</td>
+    <td>25 ezer forint naponként</td>
+  </tr>
+  <tr>
+    <td>p/setcurrency</td>
+    <td>Adminisztrátori jog</td>
+    <td>Pénznem beállítása</td>
+  </tr>
+  <tr>
+    <td>p/resetcurrency</td>
+    <td>Adminisztrátori jog</td>
+    <td>Pénznem visszaállíítása alapértelmezettre ($)</td>
+  </tr>
+  <tr>
+    <td>p/inventory</td>
+    <td>Nincs</td>
+    <td>Tárgyak megjelenítése</td>
+  </tr>
+  <tr>
+    <td>p/seebank</td>
+    <td>Nincs</td>
+    <td>Banki egyenleg megnézése</td>
+  </tr>
+  <tr>
+    <td>p/deposit</td>
+    <td>Nincs</td>
+    <td>A pénz bankba rakása</td>
+  </tr>
+ <tr>
+    <td>p/deposit</td>
+    <td>Nincs</td>
+    <td>A pénz kivétele a bankból</td>
+  </tr>
+  <tr>  
+    <th>Figyelmeztető Rendszer (Warn System)</th>
+    <th>Szükséges jog</th>
+    <th>Leírás</th>
+  </tr>
+  <tr>
+    <td>p/warn</td>
+    <td>adminisztrátor</td>
+    <td>megemlített tag figyelmeztetése</td>
+  </tr>
+  <tr>
+    <td>p/seewarns</td>
+    <td>Adminisztrátor</td>
+    <td>Adott felhasználó figyelmeztetéseinek megtekintése</td>
+  </tr>
+  <tr>
+    <td>p/resetwarns</td>
+    <td>Adminisztrátor</td>
+    <td>Megemlített tag figyelmeztetéseinek lenullázása</td>
+  </tr>
+    <th>Egyéb Parancsok</th>
+    <th>Szükséges jog</th>
+    <th>Leírás</th>
+  <tr>
+    <td>p/avatar</td>
+    <td>Nincs</td>
+    <td>avatar lekérdezése</td>
+  </tr>
+  <tr>
+    <td>p/emoji</td>
+    <td>Nincs</td>
+    <td>a megadott szót kiírja emojikba</td>
+  </tr>
+  <tr>
+    <td>p/hug</td>
+    <td>Nincs</td>
+    <td>virtuális ölelés</td>
+  </tr>
+  <tr>
+    <td>p/slap</td>
+    <td>Nincs</td>
+    <td>virtuális pofon</td>
+  </tr>
+  <tr>
+    <td>p/twitchsh</td>
+    <td>Nincs</td>
+    <td>Keresés a twitchen</td>
+  </tr>
+    <tr>
+    <td>p/wikish</td>
+    <td>Nincs</td>
+    <td>Keresés a wikipédián</td>
+  </tr>
+    <tr>
+    <td>p/youtubesh</td>
+    <td>Nincs</td>
+    <td>Keresés a youtubeon.</td>
+  </tr>
+    <tr>
+    <td>p/scsearch</td>
+    <td>Nincs</td>
+    <td>Keresés a SoundCloudon</td>
+  </tr>
+    <tr>
+    <td>p/members</td>
+    <td>Nincs</td>
+    <td>A szerveren lévő összes tag.</td>
+  </tr>
+    <tr>
+    <td>p/servers</td>
+    <td>Nincs</td>
+    <td>Az összes szerver, amiben a bot bennt van</td>
+  </tr>
+    <tr>
+    <td>p/nitro</td>
+    <td>Nincs</td>
+    <td>Fake nitro prank (Képet küld)</td>
+  </tr>
+    <tr>
+    <td>p/addrespect</td>
+    <td>Nincs</td>
+    <td>Részvétel kérés</td>
+  </tr>
+    <tr>
+    <td>p/changenick</td>
+    <td>Becenevek kezelése</td>
+    <td>Becenév adása</td>
+  </tr>
+    <tr>
+    <td>p/napihal</td>
+    <td>Nincs</td>
+    <td>Naponta 1 halat kapsz</td>
+  </tr>
+    <tr>
+    <td>p/hetihal</td>
+    <td>Nincs</td>
+    <td>Hetente 1 és 4 között halat kapsz</td>
+  </tr>
+    <tr>
+    <td>p/óraihal</td>
+    <td>Nincs</td>
+    <td>Óránként 1 halat kapsz</td>
+  </tr>
+    <tr>
+    <td>p/halstats</td>
+    <td>Nincs</td>
+    <td>Halászati információk megnézése</td>
+  </tr>
+    <tr>
+    <td>p/csali</td>
+    <td>Nincs</td>
+    <td>Hal csali szerzés</td>
+  </tr>
+    <tr>
+    <td>p/frissítés</td>
+    <td>Nincs</td>
+    <td>Legútóbbi bot frissítésének megnézése</td>
+  </tr>
+    <tr>
+    <td>p/newticket</td>
+    <td>Nincs</td>
+    <td>Hibajegy készítés</td>
+  </tr>
+    <tr>
+    <td>p/closel</td>
+    <td>Nincs</td>
+    <td>Hibajegy bezárása</td>
+  </tr>
+  <tr>
+    <td>p/kiss</td>
+    <td>Nincs</td>
+    <td>virtuális csók</td>
+  </tr>
+  <tr>
+    <td>p/invite</td>
+    <td>nincs</td>
+    <td>bot meghívása a szerveredre</td>
+  </tr>
+  <tr>
+    <td>p/serverinvite</td>
+    <td>Nincs</td>
+    <td>Szerver meghívóját elküldi</td>
+  </tr>
+  <tr>
+    <td>p/roleinfo</td>
+    <td>Nincs</td>
+    <td>Leírt/megemlített szerep információi</td>
+  </tr>
+  <tr>
+    <td>p/say</td>
+    <td>Üzenetek kezelése (manage_messages)</td>
+    <td>A bot nevében való írás</td>
+  </tr>
+  <tr>
+    <td>p/csay</td>
+    <td>Üzenetek kezelése (manage_messages)</td>
+    <td>A megadott szöveget kiírja a bot a megadott csatornába</td>
+  </tr>
+  <tr>
+    <td>p/asay</td>
+    <td>üzenetek kezelése (manage_messages)</td>
+    <td>A megadott szöveget átalakítja a bot embedbe.</td>
+  </tr>
+  <tr>
+    <td>p/uptime</td>
+    <td>Nincs</td>
+    <td>A bot online ideje</td>
+  </tr>
+  <tr>
+    <td>p/cats</td>
+    <td>Nincs</td>
+    <td>Macskás képek (reddit)</td>
+  </tr>
+  <tr>
+    <td>p/dogs</td>
+    <td>Nincs</td>
+    <td>Kutyás képek (reddit)</td>
+  </tr>
+  <tr>
+    <td>p/meme</td>
+    <td>Nincs</td>
+    <td>Memek (reddit)</td>
+  </tr>
+   <tr>
+    <td>p/fox</td>
+    <td>Nincs</td>
+    <td>Rókás képek (reddit)</td>
+  </tr>
+  <tr>
+    <td>p/ping</td>
+    <td>Nincs</td>
+    <td>A bot pingje</td>
+  </tr>
+  <tr>
+    <td>p/premium</td>
+    <td>Nincs</td>
+    <td>Prémium információk megtekintése</td>
+  </tr>
+  <tr>
+    <td>p/suggest</td>
+    <td>Nincs</td>
+    <td>Javaslat tevése</td>
+  </tr>
+  <tr>
+    <td>p/bugreport</td>
+    <td>Nincs</td>
+    <td>Bug jelentése a bot fejlesztőinek (globális)</td>
+  </tr>
+    </tr>
+    <th>Prémium Parancsok</th>
+    <th>Szükséges jog</th>
+    <th>Leírás</th>
+  <tr>
+    <td>p/dmticket</td>
+    <td>Nincs</td>
+    <td>Privátban nyit hibajegyet</td>
+  </tr>
+  <tr>
+    <td>p/lock</td>
+    <td>Üzenetek kezelése</td>
+    <td>Csatorna írásának lezárása</td>
+  </tr>
+  <tr>
+    <td>p/unlock</td>
+    <td>Üzenetek kezelése</td>
+    <td>Csatorna írásának feloldása</td>
+  </tr>
+  <tr>
+    <td>p/giveaway</td>
+    <td>Üzenetek kezelése</td>
+    <td>Autómatikus nyereményjáték készítése</td>
+  </tr>
+  <tr>
+    <td>p/whatismyip</td>
+    <td>Nincs</td>
+    <td>Saját IP cím lekérdezése (Nem az igazi)</td>
+  </tr>
+  <tr>
+    <td>p/enablealink</td>
+    <td>Üzenetek kezelése</td>
+    <td>Antilink bekapcsolása (Hirdetés OFF)</td>
+  </tr>
+  <tr>
+    <td>p/disablealink</td>
+    <td>Üzenetek kezelése</td>
+    <td>Antilink kikapcsolása (Hirdetés ON)</td>
+  </tr>
+</table>
+
+<footer class="my-5 text-center">
+    <p class="mb-2"><small> <a href="https://skylerbot.tk"> VISSZA A FŐOLDALRA</a></small></p>
+    <p class="mb-2"><small>COPYRIGHT © 2019-2020. ALL RIGHTS RESERVED. WEBSITE CREATED BY<a href="https://discord.gg/JfRbAU7"> SKYLER DEV TEAM</a></small></p>
+</footer>
+
+</body>
+</html>
