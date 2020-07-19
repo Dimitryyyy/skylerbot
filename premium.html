@@ -190,9 +190,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Minde
 		</footer>
 	</div>
 	
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
-	</div>
+<script>
+  function initFreshChat() {
+    window.fcWidget.init({
+      token: "e639d26f-83e4-43f0-9631-d995d503523e",
+      host: "https://wchat.freshchat.com"
+    });
+  }
+  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+</script>
 
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
