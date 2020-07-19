@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<link rel="shortcut icon" type="image/png" href="assets\favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Skyler - Premium</title>
+	<title>Skyler - Kapcsolat</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -88,8 +88,8 @@
 					<div class="container">
 						<div class="col-md-12 col-md-offset-0">
 							<div class="animate-box">
-								<h2>Skyler Csomagok</h2>
-								<p>Nézd meg, és vásárold meg az elérhető prémium csomagot, amivel több parancsot, és funkciót tudsz feloldani, kevés pénz áráért!</p>
+								<h2>Kapcsolat</h2>
+								<p class="breadcrumbs"><span><a href="index.html">Kezdőlap</a></span> <span>Kapcsolat</span></p>
 							</div>
 						</div>
 					</div>
@@ -97,45 +97,66 @@
 			</div>
 		</section>
 
-		<div class="colorlib-pricing">
+		<div id="colorlib-contact">
 			<div class="container">
 				<div class="row">
-				</div>
-				<div class="row">
-					<div class="col-md-3 text-center animate-box">
-						<div class="pricing">
-							<h2 class="pricing-heading">Skyler Classic</h2>
-							<div class="price"><sup class="currency"></sup>FREE<small>ingyenes</small></div>
-							<p>A classic csomag elérhető az összes felhasználónk számára, mely tartalmazza az alap funkciókat, és az alap parancsokat a botban. Ezek az ingyenes parancsok.</p>
-							<p><a href="https://discord.com/oauth2/authorize?client_id=629368281513328642&scope=bot&permissions=2146958847" class="btn btn-primary">Kipróbálom!</a></p>
+					<div class="col-md-4 col-md-push-8 animate-box">
+						<h2>Kapcsolatfelvétel Információk</h2>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="contact-info-wrap-flex">
+									<div class="con-info">
+										<p><span><i class="icon-paperplane"></i></span> <a href="mailto: skylersupp@gmail.com"> skylersupp@gmail.com</a></p>
+									</div>
+									<div class="con-info">
+										<p><span><i class="icon-globe"></i></span> <a href="#">skylerbot.tk</a></p>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-md-3 text-center animate-box">
-						<div class="pricing">
-							<h2 class="pricing-heading">Skyler Premium</h2>
-							<div class="price"><sup class="currency">$</sup>2<small>havonta</small></div>
-							<p>A premium csomaggal elérhetővé válik az egyedi prémium parancsok. Ebből vannak olyanok, amik prémium pontokkal oldhatóak fel!</p>
-							<p><a href="https://donatebot.io/checkout/632173472637779968" class="btn btn-primary">Megvásárlom!</a></p>
-						</div>
-					</div>
-					<div class="col-md-3 text-center animate-box">
-						<div class="pricing">
-							<h2 class="pricing-heading">ÖRÖK Premium</h2>
-							<div class="price"><sup class="currency">$</sup>8<small>havonta</small></div>
-							<p>A premium csomaggal elérhetővé válik az egyedi prémium parancsok. Ebből vannak olyanok, amik prémium pontokkal oldhatóak fel!</p>
-							<p><a href="https://donatebot.io/checkout/632173472637779968" class="btn btn-primary">Megvásárlom!</a></p>
-						</div>
-					</div>
-					<div class="col-md-3 text-center animate-box">
-						<div class="pricing">
-							<h2 class="pricing-heading">Prémium Pontok</h2>
-							<div class="price"><sup class="currency">$</sup>1<small>darabonként</small></div>
-							<p>A Prémium Pontokkal (PP) különböző prémium parancsokat oldhat fel, amely lehetővé válik számára! Illetve Prémiumot is lehet belőle venni!</p>
-							<p><a href="https://donatebot.io/checkout/632173472637779968" class="btn btn-primary">Megvásárlom!</a></p>
-						</div>
+					<div class="col-md-8 col-md-pull-4 animate-box">
+						<h2>Üzenet küldés</h2>
+						<form action="#">
+							<div class="row form-group">
+								<div class="col-md-6">
+									<!-- <label for="fname">First Name</label> -->
+									<input type="text" id="fname" class="form-control" placeholder="családnév">
+								</div>
+								<div class="col-md-6">
+									<!-- <label for="lname">Last Name</label> -->
+									<input type="text" id="lname" class="form-control" placeholder="keresztnév">
+								</div>
+							</div>
+
+							<div class="row form-group">
+								<div class="col-md-12">
+									<!-- <label for="email">Email</label> -->
+									<input type="text" id="email" class="form-control" placeholder="email címed">
+								</div>
+							</div>
+
+							<div class="row form-group">
+								<div class="col-md-12">
+									<!-- <label for="subject">Subject</label> -->
+									<input type="text" id="subject" class="form-control" placeholder="Üzenet Tárgya">
+								</div>
+							</div>
+
+							<div class="row form-group">
+								<div class="col-md-12">
+									<!-- <label for="message">Message</label> -->
+									<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Szöveg"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<input type="submit" value="Küldés" class="btn btn-primary">
+							</div>
+						</form>		
 					</div>
 				</div>
 			</div>
+		</div>
 
 		<footer id="colorlib-footer">
 			<div class="container">
@@ -189,11 +210,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Minde
 			</div>
 		</footer>
 	</div>
-	
+
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
 	</div>
-
+	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -213,6 +234,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Minde
 	<script src="js/magnific-popup-options.js"></script>
 	<!-- Counters -->
 	<script src="js/jquery.countTo.js"></script>
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<script src="js/google_map.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
 
